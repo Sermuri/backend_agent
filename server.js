@@ -2,6 +2,35 @@ import express from "express";
 
 const app = express();
 
+app.use((req, res, next) => {
+  const allowedOrigins = [
+    "https://sergiomurillo.com.ar",
+    "https://www.sergiomurillo.com.ar",
+    "https://inteliautomake.com",
+    "https://www.inteliautomake.com"
+  ];
+
+  const origin = req.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+
+  res.setHeader("Vary", "Origin");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization"
+  );
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
+
+
 const XI_API_KEY = process.env.XI_API_KEY;
 const AGENT_ID = process.env.AGENT_ID;
 

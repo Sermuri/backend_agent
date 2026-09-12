@@ -43,13 +43,13 @@ const TTS_VOICE_ID = process.env.TTS_VOICE_ID || "Mr9CoMsr8YQzDuHzbQlU";
 const AGENTS = {
   portfolio: AGENT_ID,
   greicy: "86xXkvGitNjXvpc2dC9X",
-  pixel: "agent_8701krwsva8meycsc2yrq85nb637",
+  botcats: "m6PkabC0jHHHGnlxRkrQ",
   sky: "agent_2601kfb9qwrefqbvz67kqspsqevr"
 };
 
 const NARRATIONS = {
-  intro: "Soy Sergio Enrique Murillo, arquitecto de soluciones y especialista en automatización. Combino más de veintiséis años de experiencia técnica con agentes conversacionales, APIs, productos SaaS e infraestructura preparada para producción. Diseño demostraciones que no solamente explican una idea: permiten verla y escucharla funcionando.",
-  studio: "Studio Media Labs es una plataforma SaaS de innovación aplicada a la producción multimedia. Diseñé su arquitectura e integré a Pixel, un agente de ElevenLabs que acompaña al usuario dentro del producto. La solución combina inteligencia artificial generativa, datos, APIs y una experiencia de soporte conversacional.",
+  intro: "Soy Sergio Enrique Murillo, arquitecto de soluciones y líder técnico. Integro agentes de voz, automatización, APIs, datos e infraestructura para llevar una necesidad de negocio desde la conversación inicial hasta una implementación verificable. Combino más de veintiséis años de experiencia tecnológica con desarrollo de productos, formación y liderazgo de proyectos de inteligencia artificial.",
+  studio: "Studio Media Labs es una plataforma SaaS de innovación aplicada a la producción multimedia. Diseñé su arquitectura, los flujos de generación y las integraciones que conectan inteligencia artificial, datos, APIs y una experiencia de trabajo unificada.",
   parque: "Como CTO de Parque de la Paz, lideré la integración de Greicy, una agente de voz creada con ElevenLabs. Greicy se conecta mediante herramientas seguras y flujos de automatización para orientar a los clientes y responder consultas sobre su estado de cuenta.",
   aiqr: "AIQR es un producto SaaS diseñado para transformar operaciones empresariales mediante agentes, flujos inteligentes, datos estructurados e integraciones seguras. El proyecto reúne automatización, arquitectura web y capacidades de inteligencia artificial aplicadas a procesos reales.",
   sky: "Sky es una experiencia conversacional desarrollada para SkyOnline. El agente utiliza la plataforma de ElevenLabs y una interfaz integrada para ofrecer una interacción directa por voz dentro de un producto digital.",
